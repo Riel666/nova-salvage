@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOVA SALVAGE — harvest the cores, dodge the mines</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #04061a; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, sans-serif;
+    color: #8fa3c8;
+  }
+  canvas {
+    display: block;
+    border: 1px solid #22305e;
+    border-radius: 10px;
+    box-shadow: 0 0 42px rgba(47, 168, 255, 0.25);
+    background: #070b1e;
+  }
+  p { margin: 14px 0 0; font-size: 13px; letter-spacing: 0.04em; }
+  p b { color: #dfe9ff; font-weight: 600; }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="600"></canvas>
+<p><b>WASD / Arrows</b> thrust &nbsp;·&nbsp; <b>SPACE</b> dash &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>M</b> mute &nbsp;·&nbsp; <b>R</b> restart</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
